@@ -1,0 +1,75 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 990201
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  freemarker:
+    cache: false # 缓存配置 开发阶段应该配置为false 因为经常会改
+    suffix: .ftl # 模版文件后缀名
+    charset: UTF-8 # 文件编码
+    template-loader-path: classpath:/templates/
+  thymeleaf:
+    cache: false # 启用缓存:建议生产开启
+    check-template-location: true # 检查模版是否存在
+    enabled: true # 是否启用
+    encoding: UTF-8 # 模版编码
+    excluded-view-names: # 应该从解析中排除的视图名称列表（用逗号分隔）
+    mode: HTML5 # 模版模式
+    prefix: classpath:/templates/ # 模版存放路径
+    suffix: .html # 模版后缀
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    connect-timeout: 5000
+#    sentinel:  # 哨兵模式连接配置
+#      master: mymaster  #master节点名称,redis sentinel模式安装的时候会配置
+#      nodes: 192.168.1.201:26379,192.168.1.202:26379,192.168.1.203:26379               # 哨兵的IP:Port列表
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+  mail:
+    host: smtp.qq.com
+    username: 2419316154@qq.com
+    password: xfdqqabnnlkrecfa
+    protocol: smtp #发送邮件协议
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.port: 465 #端口号465或587
+    properties.mail.display.sendmail: Javen #可以任意
+    properties.mail.display.sendname: Spring Boot Guide Email #可以任意
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    properties.mail.smtp.ssl.enable: true
+    default-encoding: utf-8
+mybatis:
+  mapper-locations: classpath:generator/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 打印sql语句日志
+family:
+  family-name: "happy-family"
+  father:
+    name: Simple
+    age: 180
+  mother:
+    alias:
+      - lovely
+      - ailice
+  child:
+    name: SimpleSon
+    age: 5
+    friends:
+      - hobby: football
+        sex:  male
+      - hobby: basketball
+        sex: female
+#logging:
+#  level:
+#    com.s.s.s: DEBUG 打印输出指定包下的SQL日志

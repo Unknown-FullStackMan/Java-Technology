@@ -1,0 +1,17 @@
+family02:
+  family-name: "happy-family"
+  father:
+    name: Simple
+    age: 180
+  mother:
+    alias:
+      - lovely
+      - ailice
+  child:
+    name: SimpleSon
+    age: 5
+    friends:
+      - hobby: football
+        sex:  male
+      - hobby: basketball
+        sex: female
