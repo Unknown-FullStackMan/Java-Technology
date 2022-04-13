@@ -1,4 +1,4 @@
-package pojo;
+package practice.practicedemo.pojo;
 
 /**
  * @Author Simple
@@ -15,6 +15,7 @@ public class cloneClass implements Cloneable {
      * @return
      * @throws CloneNotSupportedException
      */
+    @Override
     public cloneClass clone() throws CloneNotSupportedException {
         return (cloneClass)super.clone();
     }
@@ -35,11 +36,11 @@ public class cloneClass implements Cloneable {
         this.id = id;
     }
 
-    public pojo.cloneClass getCloneClass() {
+    public cloneClass getCloneClass() {
         return cloneClass;
     }
 
-    public void setCloneClass(pojo.cloneClass cloneClass) {
+    public void setCloneClass(cloneClass cloneClass) {
         this.cloneClass = cloneClass;
     }
 }

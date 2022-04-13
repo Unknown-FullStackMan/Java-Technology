@@ -1,8 +1,7 @@
-package clone;
+package practice.practicedemo.clone;
 
 
-import pojo.cloneClass;
-
+import practice.practicedemo.pojo.cloneClass;
 
 /**
  * @Author Simple
@@ -16,8 +15,10 @@ public class cloneTest2 {
         cloneClass s1 = new cloneClass();
         s1.setName("s1");
         s1.setCloneClass(new cloneClass());
+
         cloneClass s2 = s1.clone();
         s2.setName("s2");
+
         System.out.println(s1 == s2);
         System.out.println(s2.getName());
         System.out.println(s1.getName());

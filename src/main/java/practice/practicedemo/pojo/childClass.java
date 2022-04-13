@@ -1,4 +1,4 @@
-package pojo;
+package practice.practicedemo.pojo;
 
 /**
  * @Author Simple

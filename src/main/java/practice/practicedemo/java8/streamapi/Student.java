@@ -2,7 +2,7 @@ package practice.practicedemo.java8.streamapi;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
+
 
 /**
  * @Author Simple

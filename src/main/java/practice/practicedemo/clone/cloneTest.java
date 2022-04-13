@@ -1,6 +1,7 @@
-package clone;
+package practice.practicedemo.clone;
 
-import pojo.superClass;
+
+import practice.practicedemo.pojo.superClass;
 
 /**
  * @Author Simple

@@ -1,4 +1,4 @@
-package pojo;
+package practice.practicedemo.pojo;
 
 /**
  * @Author Simple
@@ -21,6 +21,11 @@ public class superClass  {
         return name;
     }
 
+    public Integer getId() {
+        return id;
+    }
 
-
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }
